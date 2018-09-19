@@ -1,0 +1,17 @@
+<%= form_with(model: mentions_legale, local: true) do |form| %>
+  <% if mentions_legale.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mentions_legale.errors.count, "error") %> prohibited this mentions_legale from being saved:</h2>
+
+      <ul>
+      <% mentions_legale.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
