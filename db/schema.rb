@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_19_151013) do
+ActiveRecord::Schema.define(version: 2018_09_20_174758) do
 
   create_table "cgus", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -32,12 +32,7 @@ ActiveRecord::Schema.define(version: 2018_09_19_151013) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "homes", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "mentions_legales", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+  create_table "mentionslegales", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -48,6 +43,15 @@ ActiveRecord::Schema.define(version: 2018_09_19_151013) do
   end
 
   create_table "resumes", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "services", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+    t.string "nom"
+    t.text "contenu"
+    t.string "image"
+    t.text "competences"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

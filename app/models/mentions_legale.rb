@@ -1,2 +1,0 @@
-class MentionsLegale < ApplicationRecord
-end

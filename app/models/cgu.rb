@@ -1,2 +1,0 @@
-class Cgu < ApplicationRecord
-end
