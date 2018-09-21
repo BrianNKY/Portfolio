@@ -4,7 +4,6 @@ class ResumesController < ApplicationController
   # GET /resumes
   # GET /resumes.json
   def index
-    @resumes = Resume.all
   end
 
   # GET /resumes/1

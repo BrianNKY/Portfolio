@@ -4,7 +4,7 @@ class MentionslegalesController < ApplicationController
   # GET /mentionslegales
   # GET /mentionslegales.json
   def index
-    @mentionslegales = Mentionslegale.all
+    
   end
 
   # GET /mentionslegales/1

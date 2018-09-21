@@ -4,7 +4,7 @@ class FreelancesController < ApplicationController
   # GET /freelances
   # GET /freelances.json
   def index
-    @freelances = Freelance.all
+    
   end
 
   # GET /freelances/1
